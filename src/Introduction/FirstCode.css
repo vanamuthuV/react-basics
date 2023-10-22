@@ -1,0 +1,37 @@
+.Navs {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+body {
+    margin: 0px;
+}
+
+#props {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 16px;
+}
+
+#props > li {
+    display: inline;
+    padding: 0px 10px;
+    cursor: pointer;
+}
+
+.imgs {
+    width : 32px;
+    height : 32px;
+}
+
+footer {
+    background-color: gray;
+}
+
+footer > small {
+    font-size: 15px;
+}

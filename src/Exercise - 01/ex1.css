@@ -1,0 +1,64 @@
+.react-icon {
+    width : 28.93px;
+    width : 28.93px;
+    padding: 0px 5px;
+}
+
+.react-name {
+    font-size : 22.25px;
+    font-family: 'Inter';
+    color : rgba(97, 218, 251, 1);
+    font-style : bold;
+    padding: 0px 5px;
+}
+
+.react-course {
+    font-size : 16px;
+    color : rgba(222, 235, 248, 1);
+    font-family: 'Inter';
+}
+
+nav {
+    display : flex;
+    flex-direction : row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(33, 34, 42, 1);
+    padding-left: 15px;
+    padding-right : 15px;
+    height : 91px;
+}
+
+.react-header-div {
+    display : flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    background:url(src/assets/reactjs.svg) no-repeat center rgba(40, 45, 53, 1);
+    padding : 50px 25px;
+    height :69.9vh
+}
+
+.Fun {
+    font-family : 'Inter';
+    color : rgba(255, 255, 255, 1);
+    font-size : 39.06px;
+    margin : 0px;
+    padding : 10px 0px 20px 0px;
+}
+
+main > div > ul > li {
+    font-size : 16px;
+    color : #FFFFFF;
+    font-style: regular;
+    font-family: 'Inter';
+    padding : 10px;
+}
+
+main > div > ul > li::marker {
+    color: rgba(97, 218, 251, 1);
+    font-size : 20px;
+}

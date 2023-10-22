@@ -1,0 +1,132 @@
+.Mail > span > img,.LinkedIn > span > img{
+    width : 16px;
+    height : 16px;
+    padding: 8px;
+}
+
+.Mail > span > img {
+    padding-top : 10px;
+}
+
+.Mail,.LinkedIn {
+    width : 115px;
+    height : 34px;
+    background-color: #FFFFFF;
+    font-size : 14px;
+    font-style : medium;
+    border-radius: 6px;
+    border : 1px gray solid;
+    display: flex;
+    color : rgba(55, 65, 81, 1);
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+}
+
+.img {
+    width : 317px;
+    height : 317px;
+    border-radius: 10px;
+}
+
+.LinkedIn {
+    background-color: rgba(80, 147, 226, 1);
+    color : #FFFFFF;
+}
+
+.Outer-inner-div > h3 {
+    color : #FFFFFF;
+    font-size : 25px;
+    width : 100%;
+}
+
+.Outer-inner-div > h4 {
+    color : rgba(243, 191, 153, 1);
+    font-size : 12.8px;
+}
+
+.Outer-inner-div > h5 {
+    color : rgba(245, 245, 245, 1);
+    font-size : 10.24px;
+    width : 100%;
+}
+
+.Outer {
+    display: flex;
+    gap : 5rem; 
+    row-gap: 30px;
+    justify-content: center;
+    flex-flow : row wrap;
+}
+
+.Info {
+    text-align: center;
+}
+
+.Button-aligner {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.Major-Outer {
+    width : 317px;
+    background-color: rgba(26, 27, 33, 1);
+    border-radius: 10px;
+}
+
+.Outer-inner-div1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 0px;
+}
+
+.para {
+    word-wrap: break-word;
+    width: 247px;
+    font-size : 10.24px;
+    color : rgba(220, 220, 220, 1);
+    font-style : Regular;
+    margin-top: 6px;
+}
+
+.para-heading {
+    font-size : 16px;
+    color : rgba(245, 245, 245, 1);
+    font-style : bold;
+    margin-bottom: 5px;
+}
+
+.Footer {
+    width : 70%;
+    background-color: rgba(22, 22, 25, 1);
+    display: flex;
+    padding-left : 47.55px;
+    padding-right : 47.55px;
+    border-radius: 10px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    height : 64px;
+}
+
+#Info {
+    margin-bottom: 5px;
+}
+#Info1 {
+    margin-top: 5px;
+    margin-bottom: 6px;
+    font-style: Regular;
+}
+#Info2 {
+    margin-top: 6px;
+}
+
+body {
+    font-family: 'Inter';
+    margin : 20px;
+}
