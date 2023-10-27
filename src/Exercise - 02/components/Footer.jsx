@@ -1,13 +1,13 @@
 import React from "react";
 import { Data } from "./data";
-import stars from "../assets/stars.svg";
-import dot from "../assets/dot.svg";
+import stars from "../../../public/assets-for-Exercise-02/stars.svg";
+import dot from "../../../public/assets-for-Exercise-02/dot.svg";
 
 export const Footer = () => {
     return (
         <div className="FooterOuter">
             {Data.map((props) => {
-                return <FooterStructure {...props} />;
+                return <FooterStructure {...props} key = {props.id} />;
             })}
         </div>
     )
@@ -15,12 +15,22 @@ export const Footer = () => {
 
 const FooterStructure = (props) => {
 
-    const {img,unknown,rating,status,country,title,Price,currency} = props
+  const { img, unknown, rating, status,location,title,Price,currency,openSpot} = props
+    
+  let StatusText
+  
+  if (openSpot === 0) {
+    StatusText = "SOLD OUT"
+  } else if (location === 'ONLINE') {
+    StatusText = "ONLINE"
+  }
 
     return (
       <div className="Inner-Outer">
         <div className="Content">
-          <h4 className="Status">{status}</h4>
+          {StatusText && (
+            <h4 className="Status">{StatusText}</h4>
+          )}
           <img className="Content-Image" src={img}></img>
         </div>
         <div>
@@ -29,7 +39,7 @@ const FooterStructure = (props) => {
               <img className="star" src={stars}></img> {rating}
             </span>{" "}
             ({unknown}) <img className="Dot" src={dot}></img>
-            {country}
+            {location}
           </p>
           <p className="title">{title}</p>
           <p className="Price">

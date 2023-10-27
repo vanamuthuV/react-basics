@@ -1,39 +1,42 @@
 import React from "react";
-import shorts1 from "../assets/shorts1.svg";
-import shorts2 from "../assets/shorts2.svg";
-import shorts3 from "../assets/shorts3.svg";
+import shorts1 from "../../../public/assets-for-Exercise-02/shorts1.svg";
+import shorts2 from "../../../public/assets-for-Exercise-02/shorts2.svg";
+import shorts3 from "../../../public/assets-for-Exercise-02/shorts3.svg";
 
 export const Data = [
   {
+    id : 1,
     img: shorts1,
     unknown: 6,
         rating: 5.0,
-    status : 'SOLD OUT',
-    country: "USA",
+    location : "USA",
     title: "Life lessons with Katie Zaferes",
     Price: 136,
     currency: "$",
+    openSpot : 0
   },
 
   {
+    id : 2,
     img: shorts2,
     unknown: 30,
       rating: 5.0,
-    status : 'ONLINE',
-    country: "USA",
+    location: "ONLINE",
     title: "Learn wedding photography",
     Price: 125,
     currency: "$",
+    openSpot : 1
   },
 
   {
+    id : 3,
     img: shorts3,
     unknown: 2,
       rating: 4.8,
-    status : 'EMPTY NOW',
-    country: "USA",
+    location: "INDIA",
     title: "Group Mountain Biking",
     Price: 50,
     currency: "$",
+    openSpot : 3,
   },
 ];

@@ -1,0 +1,44 @@
+.Outer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.Header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Header > h1 {
+    font-size : 30px;
+    font-style: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.Header > h5 {
+    font-size : 12px;
+    color : gray;
+}
+
+.P1 {
+    padding : 10px;
+    border : 1px solid gray;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom : 5px;
+}
+
+.P2 {
+    padding : 5px;
+    border : 1px solid rgb(112, 107, 107);
+    font-size : 14px;
+    color : rgb(112, 105, 105);
+    margin-top : 5px;
+}
+
+body {
+    padding : 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}

@@ -1,7 +1,7 @@
-import img1 from "../Solo Exercise/assets/Itachi.jpg";
-import img2 from "../Solo Exercise/assets/Mikey.jpg";
-import img3 from "../Solo Exercise/assets/saitan.jpg";
-import img4 from "../Solo Exercise/assets/tanjiro.jpg";
+import img1 from "../../public/assets-for-solo Exercise/Itachi.jpg";
+import img2 from "../../public/assets-for-solo Exercise/Mikey.jpg";
+import img3 from "../../public/assets-for-solo Exercise/saitan.jpg";
+import img4 from "../../public/assets-for-solo Exercise/tanjiro.jpg";
 
 export const Data = [
     {

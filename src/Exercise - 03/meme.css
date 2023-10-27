@@ -1,0 +1,92 @@
+nav,nav > div,.Form-div,Form{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav {
+    padding : 0px 20px;
+    height : 65px;
+    background-color: #672280;
+}
+
+nav > div > img {
+    padding : 10px;
+}
+
+nav > div > h1 {
+    color: #FFF;
+    font-size: 20.748px;
+    font-family: 'Karla';
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -2.075px;
+}
+
+nav > h4 {
+    color: #FFF;
+    text-align: right;
+    font-family: 'Inter';
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.Form {
+    flex-direction: column;
+    margin : 25px;
+}
+
+.Form-div {
+    flex-direction: column;
+}
+
+.Meme1,.Meme2 {
+    width : 210px;
+    height : 35px;
+    margin: 10px;
+    border-radius:5px;
+    border : 1px solid gray;
+    padding-left: 20px;
+}
+
+.Meme1::placeholder,.Meme2::placeholder {
+    padding-left: 10px;
+}
+
+.Form > button {
+    width : 487px;
+    height : 40px;
+    background-color: #711F8D;
+    border-radius: 5px;
+    color: #FFF;
+    text-align: center;
+    font-family: 'Karla';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -1.6px;
+    border : 1px solid gray;
+    padding: 0px;
+}
+
+.Meme1:focus{
+    outline: none;
+    border: 1px solid gray;
+}
+
+.Meme {
+    width : 400px;
+    height: 400px;
+}
+
+.Img-div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}

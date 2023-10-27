@@ -1,6 +1,6 @@
 import React from "react";
 import { ReactDOM } from "react";
-import imgs from "../assets/react.svg";
+import imgs from "../../public/assets-for-Introduction/react.svg";
 
 const Data = [
   "Was released in 2013",

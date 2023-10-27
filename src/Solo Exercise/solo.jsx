@@ -3,12 +3,12 @@ import "../Solo Exercise/solo.css"
 import { Data } from "./data";
 import { About } from "./data";
 import { Interests } from "./data";
-import mail from "../Solo Exercise/assets/mail.svg"
-import linkedin from "../Solo Exercise/assets/linkedin.svg"
-import Twitter from "../Solo Exercise/assets/twitter.svg"
-import Facebook from "../Solo Exercise/assets/facebook.svg"
-import Instagram from "../Solo Exercise/assets/instagram.svg"
-import GitHub from "../Solo Exercise/assets/github.svg"
+import mail from "../../public/assets-for-solo Exercise/mail.svg";
+import linkedin from "../../public/assets-for-solo Exercise/linkedin.svg";
+import Twitter from "../../public/assets-for-solo Exercise/twitter.svg";
+import Facebook from "../../public/assets-for-solo Exercise/facebook.svg";
+import Instagram from "../../public/assets-for-solo Exercise/instagram.svg";
+import GitHub from "../../public/assets-for-solo Exercise/github.svg";
 
 const clicker = (value) => {
     open(value)

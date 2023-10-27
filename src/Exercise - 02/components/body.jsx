@@ -1,5 +1,5 @@
 import React from "react";
-import photo from "../assets/photo.svg"
+import photo from "../../../public/assets-for-Exercise-02/photo.svg";
 
 export const Body = () => {
     return (

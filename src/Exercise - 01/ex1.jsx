@@ -1,5 +1,5 @@
 import React from "react";
-import img1 from "../assets/reactlogo.svg";
+import img1 from "../../public/assets-for-Exercise-01/reactlogo.svg";
 
 const Header = () => {
     return (
