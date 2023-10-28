@@ -15,6 +15,7 @@
     font-size : 30px;
     font-style: bold;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom : 25px;
 }
 
 .Header > h5 {
@@ -28,6 +29,8 @@
     font-size: 16px;
     cursor: pointer;
     margin-bottom : 5px;
+    border-radius: 10px;
+    margin-top : 5px;
 }
 
 .P2 {
@@ -36,9 +39,26 @@
     font-size : 14px;
     color : rgb(112, 105, 105);
     margin-top : 5px;
+    border-radius: 10px;
 }
 
 body {
     padding : 20px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.Answer-Div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Answer-Div > button{
+    padding : 10px;
+    background-color: green;
+    border : 1px solid gray;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
 }
