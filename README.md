@@ -64,7 +64,7 @@ ReactDOM.createRoot(getElementById("root)).render(<React.StrictMode>Code Here / 
 - States :
     States are the variables declared inside a function, when the value of the of the variable are changed then the changed value will be displayed/saved
 
-<-- useState -->
+# <-- useState -->
 
 - React.useState("") return a array
 - Basically useState has two entity one is a variable and another one is function
