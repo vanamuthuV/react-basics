@@ -89,13 +89,17 @@ ReactDOM.createRoot(getElementById("root)).render(<React.StrictMode>Code Here / 
 
     Solution : just pass the function like <Star handle={ADD} />
                 In Star Component write :
+
+                    {
                     const Star = (props) => {
                         return (
                             <div onclick={props.ADD}>
-
+                                // Code goes here..
                             </div>
                         )
+                    } // This Works Better
                     }
+
                 This Works !!
 
     2) Passing parameter to a onclick :
