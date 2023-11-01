@@ -90,13 +90,13 @@ ReactDOM.createRoot(getElementById("root)).render(<React.StrictMode>Code Here / 
     Solution : just pass the function like <Star handle={ADD} />
                 In Star Component write :
 
-                    const Star = (props) => {
-                        return (
-                            <div onclick={props.ADD}>
-                                // Code goes here..
-                            </div>
-                        )
-                    } // This Works Better
+     const Star = (props) => {
+        return (
+            <div onclick={props.ADD}>
+                // Code goes here..
+            </div>
+        )
+    } // This Works Better
 
     2) Passing parameter to a onclick :
 
@@ -106,3 +106,36 @@ ReactDOM.createRoot(getElementById("root)).render(<React.StrictMode>Code Here / 
     3) Updating the object in react :
 
         -> setData(prev => {...prev, on : !prev.on}) // Where on is a key in the object
+
+
+# <- Forms In React ->
+
+ - We Have the Input tag and to obtain the value of the input tag we normally use "event.target.value". Here the problem is the value od the input is controlled by the input box but in react it is a good practice to have every thing controlled by the react. for that lets take a example :
+
+    const forms = () => {
+        const[formdata, setFormdata] = useState({fn : ""})
+
+        const Handler = (event) => {
+        setFormdata(prev => {
+            event.target.name
+            return {
+                ...prev,
+                [event.target.name] : event.target.value // Value changing based on the input box to prevent add a value in input
+            }
+        })
+    }
+
+        return (
+            <input
+            type="text"
+            placeholder="First Name"
+            name="fn"
+            value = {formdata.fn} // Corrected : now value updated based on react state
+            onChange={(event) => {
+              Handler(event);
+            }}
+          />
+        )
+    }
+
+    * For More Information Check Out "Forms" folder
