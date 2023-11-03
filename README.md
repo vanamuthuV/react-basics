@@ -139,3 +139,17 @@ ReactDOM.createRoot(getElementById("root)).render(<React.StrictMode>Code Here / 
     }
 
     * For More Information Check Out "Forms" folder
+
+# <-- useEffect -->
+
+- Itz a react hooks which we can determine that how much time does the function or the component must be rendered
+
+- The useEffect will be executed at the beginning of the page loads and the it loads after the return statement is executed means after setting the UI
+
+- It consists of two components one is the function and the other one is the dependency array 
+
+- The function consists of the logic what to do and the dependency array consists of the number of times the function must executed
+
+- useEffect will strictly follows the dependency array
+
+- useEffect will run atleast once

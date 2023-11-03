@@ -9,28 +9,35 @@ export const Render = () => {
         Pass: "",
         isCommunity : false
     })
+  
+    const [alerter, setAlerter] = useState(false)
 
     const Searcher = (name) => {
-       return  LocalStorage.map((item) => {
-            const Verdict = item.Id === name ? true : false
-            console.log(Verdict)
-            return Verdict
-        })
-
+      return LocalStorage.map((item) => {
+          if (item.Id === name) {
+            return setAlerter(true)
+          } else {
+            return setAlerter(false)
+          }
+      })
     }
 
     const Storage = (event) => {
-        event.preventDefault()
-        if (() => Searcher(sign.Id)) {
-            alert("You Already Have An Account Please Click On Sign In ")
-        }
-        else {
-            sign.isCommunity === false
-              ? console.log("You Unclicked The Community")
-              : console.log("You Clicked the Community");
-            LocalStorage.push(sign);
-            console.log(LocalStorage);
-        }
+      event.preventDefault()
+      console.log(alerter)
+      setTimeout(() => {Searcher(sign.Id);},1000)
+      console.log(alerter)
+      setTimeout(() => {
+        if (alerter) {
+          alert("You Already Have An Account Please Click On Sign In ");
+        } else {
+          sign.isCommunity === false
+            ? console.log("You Unclicked The Community")
+            : console.log("You Clicked the Community");
+          LocalStorage.push(sign);
+          console.log(LocalStorage);
+        }  
+      }, 1000)
     }
 
     const Setter = (event) => {
@@ -57,7 +64,7 @@ export const Render = () => {
         ></input>
         <input
                 type="text"
-                id="Pass"
+            id="Pass"
           placeholder="Enter Passcode"
           name="Pass"
           value={sign.Pass}

@@ -80,8 +80,9 @@ nav > h4 {
 }
 
 .Meme {
-    width : 400px;
-    height: 400px;
+    width : 380px;
+    height: 380px;
+    position : relative;
 }
 
 .Img-div {
@@ -89,4 +90,22 @@ nav > h4 {
     flex-direction: row;
     align-items: center;
     justify-content: center;
+}
+
+.Top-Text,.Bottom-Text {
+    position : absolute;
+    font-size : 30px;
+    max-width: 300px;
+    color : white;
+    font-family: 'Inter';
+    font-style: bold;
+    text-shadow: 3px 3px 0px black;
+}
+.Top-Text {
+    text-align: center;
+    top : 220px;
+}
+.Bottom-Text {
+    text-align: center;
+    bottom : 40px;
 }
