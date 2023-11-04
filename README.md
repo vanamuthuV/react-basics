@@ -153,3 +153,13 @@ ReactDOM.createRoot(getElementById("root)).render(<React.StrictMode>Code Here / 
 - useEffect will strictly follows the dependency array
 
 - useEffect will run atleast once
+
+# Memory Leak In UseEffect
+
+- A memory leak in React. js can occur when you have objects or resources that are no longer needed but are still being referenced by the application, preventing them from being garbage collected.
+
+- Actually When Have a Problem called Memory Leak in useEffect
+
+- To Resolve that use a cleaning function // Refer : src\Exercise - 03\Simple Exercise\Display.jsx
+
+- In Simple clearing the useEffect

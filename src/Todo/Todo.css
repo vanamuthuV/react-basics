@@ -1,0 +1,44 @@
+.Outer,.Item{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 10px;
+}
+
+#Add,#DlAll,.Item > button{
+    font-size : 14px;
+    color : black;
+    padding : 10px 20px;
+    border : 1px solid gray;
+    border-radius: 10px;
+    letter-spacing: 2px;
+}
+
+#Add {
+    background-color: rgb(75, 146, 75);
+    color : rgb(227, 215, 215);
+}
+
+#DlAll {
+    background-color: rgb(228, 70, 70);
+}
+
+.Item {
+    justify-content: center;
+}
+
+.Item > p {
+    width : 415px;
+    font-size : 24px;
+    padding : 5px 20px;
+}
+
+.Item > button {
+    background-color: rgb(228, 70, 70);
+    margin : 5px 30px;
+}
+
+body {
+    font-family: 'Fira Code';
+}
