@@ -16,9 +16,8 @@ import './Exercise - 01/ex1.css'
 //import { Render } from './useEffect/count'
 // import { Render } from './Exercise - 03/Simple Exercise/screen'
 // import { Render } from './Todo/Todo'
+import { Render } from './TenziesGame/Tenzies'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
     <Render />
-  </React.StrictMode>,
 )

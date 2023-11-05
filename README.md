@@ -107,6 +107,16 @@ ReactDOM.createRoot(getElementById("root)).render(<React.StrictMode>Code Here / 
 
         -> setData(prev => {...prev, on : !prev.on}) // Where on is a key in the object
 
+    4) Updating a Object Key inside a array
+
+        setfirstTime((prev) =>
+            prev.map((item) => {
+                return item.id === id
+                    ? { ...item, isSelected : !item.isSelected}
+              : item;
+          })
+        );
+
 
 # <- Forms In React ->
 
@@ -153,6 +163,14 @@ ReactDOM.createRoot(getElementById("root)).render(<React.StrictMode>Code Here / 
 - useEffect will strictly follows the dependency array
 
 - useEffect will run atleast once
+
+- useEffect runs twice when the strictmode is on in react even though you have a empty dependency array
+
+- It can mainly used in calling a function which a particular thing changes means the you have a state and a useeffect you need to call a function whnever the state chages therefor you use useEffect
+
+    useEffecr(() => {
+        //function statement
+    } , [state variable])
 
 # Memory Leak In UseEffect
 
