@@ -188,7 +188,9 @@ ReactDOM.createRoot(getElementById("root)).render(<React.StrictMode>Code Here / 
 
 - In Simple clearing the useEffect
 
-# <-- useRef --> // Refer : src\useRef\ref.jsx
+# <-- useRef --> 
+
+- // Refer : src\useRef\ref.jsx
 
 - If we look back in our course we used a controlled input in the form practise sessions like for input we gave value and for checkbox we gave checked to over come that thing we are using useRef
 
