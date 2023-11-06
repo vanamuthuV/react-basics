@@ -166,6 +166,12 @@ ReactDOM.createRoot(getElementById("root)).render(<React.StrictMode>Code Here / 
 
 - useEffect runs twice when the strictmode is on in react even though you have a empty dependency array
 
+- Hooks can't placed in conditional but inside the Hooks You can place a conditional for the statement
+
+- [] - Only renders initial and also acts as a Cleaning function
+
+- useEffect will be used when you have to change a data from the outside the component 
+
 - It can mainly used in calling a function which a particular thing changes means the you have a state and a useeffect you need to call a function whnever the state chages therefor you use useEffect
 
     useEffecr(() => {
@@ -181,3 +187,11 @@ ReactDOM.createRoot(getElementById("root)).render(<React.StrictMode>Code Here / 
 - To Resolve that use a cleaning function // Refer : src\Exercise - 03\Simple Exercise\Display.jsx
 
 - In Simple clearing the useEffect
+
+# <-- useRef --> // Refer : src\useRef\ref.jsx
+
+- If we look back in our course we used a controlled input in the form practise sessions like for input we gave value and for checkbox we gave checked to over come that thing we are using useRef
+
+- useRef are used to replace the controlled inputs and it won't rerender the stuff when changed
+
+- Generally we use the event.target to get value and other stuff but it is ease to know using useRef
