@@ -208,6 +208,16 @@ ReactDOM.createRoot(getElementById("root)).render(<React.StrictMode>Code Here / 
 ###  useReducer
 ```
 
+- It consists of 4 components which are divided as a array return by the useReducer and the array consists of two things one is state and dispatch and the useReducer will be having two passed parameter that are reduce and initial Value 
+
+    ```
+    Components :
+    * state : A variable to store the value 
+    * Dispatch : A function used to call the reduce function by returning  a specific value to accomplish a task
+    * Reduce : Itz a function used to update the state basically works on the return value provided by the dispatch function and uses swtich case  or if else ladder (complicated Situation) always returns object
+    * Intial Arg : This may be of any type like a single value or a object
+    ```
+
 - Always return a object 
 
 - the reduce function must should have a return type 
@@ -230,8 +240,10 @@ ReactDOM.createRoot(getElementById("root)).render(<React.StrictMode>Code Here / 
 - Assume that you created a function in the parent component and you need to call the function in the 5th function. You can' t pass the function directly as i mentioned the functions are called one after one. And the only possible thing is to pass the function through the way to the last function and then calling it
 
 This kind of stuff may become confuse in larger projects, Therefore we Use *useContext*
+```
 
 ** useContext **
 
+```
 
 ```
