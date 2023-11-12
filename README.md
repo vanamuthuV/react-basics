@@ -221,3 +221,18 @@ ReactDOM.createRoot(getElementById("root)).render(<React.StrictMode>Code Here / 
 - Passing the data to the reduce function
 ```
 
+### useContext
+
+```
+#### PropDrilling [a relative link](src\PropDrilling\drill.jsx)
+
+- prop drilling means we need a particular function or something at a particular time. so that let's consider that we have five function out of that a parent function. The functions are called in such a way that the one inside another means frist calls the second and second one calls the third and so on.
+
+- Assume that you created a function in the parent component and you need to call the function in the 5th function. You can' t pass the function directly as i mentioned the functions are called one after one. And the only possible thing is to pass the function through the way to the last function and then calling it
+
+This kind of stuff may become confuse in larger projects, Therefore we Use *useContext*
+
+** useContext **
+
+
+```
