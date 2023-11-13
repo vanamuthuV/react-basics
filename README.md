@@ -30,7 +30,7 @@ ReactDOM.createRoot(getElementById("root)).render(<React.StrictMode>Code Here / 
 - Every Component must have a return type and "only one" parent should be returned with many number of siblings embedded in it
 ```
 
-## <-- Exercise - 01 -->
+##  Exercise - 01
 ```
 - Learnt About using the components, the ::marker property and background with both image and color at same time in CSS
 - ::marker property is used to select the bulletins in the unordered list
