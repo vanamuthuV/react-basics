@@ -208,6 +208,17 @@ ReactDOM.createRoot(getElementById("root)).render(<React.StrictMode>Code Here / 
 ###  useReducer
 ```
 
+    Syntax :
+    ```
+    * const[state, dispatch] = useReducer(reduce,intial)
+    * const SomeName = () => {
+           dispatch({type : 'Something'})
+      }
+    * const reduce = (state, action) => {
+
+      }
+    ```
+
 - It consists of 4 components which are divided as a array return by the useReducer and the array consists of two things one is state and dispatch and the useReducer will be having two passed parameter that are reduce and initial Value 
 
     ```
@@ -245,5 +256,83 @@ This kind of stuff may become confuse in larger projects, Therefore we Use *useC
 ** useContext **
 
 ```
+At beginning you will be creating a context using create context and then you wrap a set of code by replacing a html tag like <VariableName.Provider value = {parameter}>
+
+- To use these stuff or to call the value you use the useContext passed with the createcontect variable name and store the value
+
+- VariableName.Provider value={{}} // Frist flower bracket for object and the second is for the JS Code
+
+    Syntax :
+    ```
+    * const VariableName = React.createContext();
+    * const variable = useContext(VaribleName)
+    ```
+
+- useContext have two value A Provider and a Consumer
+
+- More Efficient than props in my case
+
+- When To Use : When you have two four and more than four function or components in a single file 
 
 ```
+
+### Custom Hooks
+
+```
+- Very Custom Hooks must start with the word 'use'
+
+- In Simpler Words its a function which may or maynot recieve a props but it returns a value and it can be used
+
+- Ex : Consider the example that we have a useFetch function which recieves a url as props and the fetching occurs in normal ways and you are returning Data and the data which is returned can be used by destructing them
+```
+
+### PropType
+
+###### Refer JohnSmilga's 10hrs video from freecodecamp Time Stamp : 8hr 45mins - Topic Name : PorpType
+
+```
+- Importing PropType
+        * import PropType from "proptype"
+- Using PropType
+        * variable.Proptype (Variable means the component name where the props are been passed)
+
+- destructing props :
+    Variable.Proptype = {
+        name : PropType.string.isRequired,
+        price : PropType.number.isRequired,
+        image : PropType.object.isRequired
+    }
+
+    Explanation For Above Code Snippet :
+        consider the object is of the form 
+        Ex : {
+            name : "Tony Stark",
+            price : 23,
+            image : {
+                url : "https:// xyz.com??/TonyStark.jpeg"
+            }
+        }
+
+        - At the beginning we wrote the name key as string because in our example we have direct string and same for the price which is number 
+        - When we look carefully we have object for image that is because of we have the url inside of the image key
+
+- PropType is basically used to control or figure the error caused on data like let us take an example of API let us assume the api we are using now have name price and image in an object type and now the scenario arises that one of the object doen't have a price and a image key in case we have two choices to solve 
+
+    * By Default Method
+    * By Short Circuit Operator
+
+
+    - By Default Methos :
+
+    Variable.defaultProps = {
+        name : 'default-name',
+        price : 3.39,
+        img : default-image
+    }
+
+    - By Short Circuit Operatot :
+
+    Directly adding || operator if its undefined then other one will be passed
+```
+
+
