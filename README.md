@@ -1,3 +1,7 @@
+# Creating React App With Vite :
+
+- npm create vite@latest my-react-app --template react
+
 # Importing Files in React
 ```
 Basically the media that is the images, audio, videos and many other media files are stored in the "public" folder, which is a common method in accessing the media
