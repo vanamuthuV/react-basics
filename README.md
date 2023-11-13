@@ -1,7 +1,7 @@
 # Creating React App With Vite :
 
 - npm create vite@latest my-react-app --template react
-- npm install for installing nodemodules
+- npm install - for installing nodemodules
 
 # Importing Files in React
 ```
