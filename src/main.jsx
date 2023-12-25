@@ -18,9 +18,9 @@ import './Exercise - 01/ex1.css'
 // import { Render } from './Todo/Todo'
 // import { Render } from './TenziesGame/Tenzies'
 // import { Render } from './useEffect/screen'
-// import { Render } from '../useRef/ref'
+import { Render } from './useRef/ref'
 // import { Render } from '../useReducer/Reduce'
-import { Render } from './PropDrilling/drill'
+// import { Render } from './PropDrilling/drill'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
     <Render />

@@ -14,14 +14,15 @@ export const Render = () => {
 
     useEffect(() => {
         console.log(re.current)
-        re.current.focus() 
+        re.current.focus()  // .focus -> This will be atomatically stands in the input box when the page is rendered
     })
 
     return (
         <div>
             <input ref={re} placeholder="Enter Something"></input>
-            <p ref={res} >Madar Chod</p>
+            <p ref={res} >Hello Hande Ercel</p>
             <button onClick={Diplayer}>Click me</button>
         </div>
     )
+
 }
